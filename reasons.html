@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Причины | Девушки против не гау</title>
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #050505;       /* Почти черный, глубокий */
+            --card-bg: #121214;       /* Цвет карточек */
+            --text-main: #e0e0e0;     /* Светло-серый текст */
+            --accent: #ff9f1c;        /* Оранжевый акцент */
+            --menu-bg: #0a0a0c;       /* Меню */
+            --neon-glow: 0 0 15px rgba(255, 159, 28, 0.6); /* Эффект неона */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            overflow-x: hidden;
+        }
+
+        /* --- ФОНОВЫЕ ЭФФЕКТЫ (НЕОНОВЫЕ ЛИНИИ) --- */
+        .bg-effects {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            overflow: hidden;
+        }
+        .line {
+            position: absolute;
+            height: 2px;
+            background: rgba(255, 159, 28, 0.3);
+            filter: blur(2px);
+        }
+        .line-1 { top: 10%; left: -10%; width: 120%; transform: rotate(-15deg); }
+        .line-2 { bottom: 10%; right: -10%; width: 120%; transform: rotate(15deg); }
+
+        /* --- МЕНЮ --- */
+        header {
+            background-color: var(--menu-bg);
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 { margin: 0; color: white; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
+        
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        nav a:hover, nav a.active { 
+            color: var(--accent); 
+            text-shadow: var(--neon-glow);
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* --- ЗАГОЛОВОК С ЭФФЕКТОМ ПЕЧАТНОЙ МАШИНКИ --- */
+        h2.typewriter {
+            font-size: 3rem;
+            line-height: 1.1;
+            color: transparent;
+            background: linear-gradient(to right, white, #888);
+            -webkit-background-clip: text;
+            margin-bottom: 50px;
+            text-align: center;
+            opacity: 0;
+            animation: fadeIn 1.5s forwards 0.5s;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+
+        /* --- СЕТКА ПРИЧИН --- */
+        .reasons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- КАРТОЧКА ПРИЧИНЫ --- */
+        .reason-card {
+            background: var(--card-bg);
+            border: 1px solid #222;
+            padding: 30px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* Неоновая рамка при наведении */
+        .reason-card::before {
+            content: '';
+            position: absolute;
+            top: -2px; left: -2px; right: -2px; bottom: -2px;
+            border: 2px solid transparent;
+            z-index: -1;
+            transition: border-color 0.4s;
+        }
+
+        .reason-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0
+
+
+<p class="reason-text">
+                    Регулярные пропажи по пятницам в кальянных или на «важных встречах» 
+                    с друзьями, о которых нельзя рассказывать. Это не про отдых, это про 
+                    отсутствие ответственности перед отношениями.
+                </p>
+            </div>
+
+            <!-- Причина 5 -->
+            <div class="reason-card">
+                <span class="icon-warning">🤫</span>
+                <div class="reason-title">Молчаливое обесценивание</div>
+                <p class="reason-text">
+                    Он не кричит и не ругается, он просто игнорирует твои достижения. 
+                    «Ну и что, что сдала сессию, зато у меня проблемы на работе». 
+                    Это медленное убийство твоей самооценки.
+                </p>
+            </div>
+
+            <!-- Причина 6 -->
+            <div class="reason-card">
+                <span class="icon-warning">🎭</span>
+                <div class="reason-title">Маска «Хорошего парня»</div>
+                <p class="reason-text">
+                    В обществе он идеальный: вежливый, спокойный, шутит. Но стоит 
+                    закрыть дверь квартиры, как маска падает. Двойные стандарты — 
+                    главный признак того, что внутри живёт «не гау».
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Итоговый блок -->
+        <div class="conclusion-box">
+            <h3>После такого общения парни становятся мнимыми.</h3>
+            <p>Они теряют связь с реальностью, заменяя её на набор стереотипов и оправданий. 
+               Этот сайт создан, чтобы ты могла вовремя заметить эти звоночки и защитить своё спокойствие.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        Разработчики: Потерпевшие девушки
+    </footer>
+
+</body>
+</html> 20
+
+
+px 40px rgba(255, 159, 28, 0.2);
+            border-color: #444;
+        }
+
+        .reason-card:hover::before {
+            border-top-color: var(--accent);
+            border-right-color: var(--accent);
+            animation: borderSpin 2s linear infinite;
+        }
+
+        @keyframes borderSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .icon-warning {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            display: block;
+            filter: drop-shadow(0 0 5px var(--accent));
+        }
+
+        .reason-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .reason-text {
+            color: #ccc;
+            line-height: 1.6;
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        /* Кнопка-вывод */
+        .conclusion-box {
+            margin-top: 60px;
+            padding: 40px;
+            background: #000;
+            border: 1px dashed var(--accent);
+            text-align: center;
+            border-radius: 10px;
+            color: #ddd;
+        }
+        
+        .conclusion-box h3 {
+            color: white;
+            margin-top: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            color: #333;
+            font-size: 0.8rem;
+            border-top: 1px solid #111;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Фоновые неоновые линии -->
+    <div class="bg-effects">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div><h1>Девушки против не гау</h1></div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="reasons.html" class="active">Причины</a>
+                <a href="actions.html">Поступки</a>
+                <a href="looks.html">Внешность</a>
+                <a href="quiz.html">Тест</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок с анимацией -->
+        <h2 class="typewriter">Почему они становятся «не гау»?</h2>
+
+        <div class="reasons-grid">
+            
+            <!-- Причина 1 -->
+            <div class="reason-card">
+                <span class="icon-warning">⚠️</span>
+                <div class="reason-title">Эффект «Синего Соляриса»</div>
+                <p class="reason-text">
+                    После покупки этой машины парень начинает думать, что он уже достиг пика успеха. 
+                    Все разговоры сводятся к литражу, разгону и тому, как круто он выглядит за рулём. 
+                    Остальное — «не важно».
+                </p>
+            </div>
+
+            <!-- Причина 2 -->
+            <div class="reason-card">
+                <span class="icon-warning">🚫</span>
+                <div class="reason-title">Токсичный контроль</div>
+                <p class="reason-text">
+                    «Ты слишком много общаешься с друзьями», «Зачем тебе это платье», 
+                    «Не ходи туда». Это маскируется под заботу, но на деле — попытка 
+                    стереть твою личность, чтобы было удобнее.
+                </p>
+            </div>
+
+            <!-- Причина 3 -->
+            <div class="reason-card">
+                <span class="icon-warning">⚽</span>
+                <div class="reason-title">Культ Роналду и футбола</div>
+                <p class="reason-text">
+                    Когда кумир становится эталоном поведения. Если Криштиану 
+                    что-то делает — значит, это правильно. Личное мнение парня исчезает, 
+                    остаётся только фанатский рефлекс.
+                </p>
+            </div>
+
+            <!-- Причина 4 -->
+            <div class="reason-card">
+                <span class="icon-warning">💨</span>
+                <div class="reason-title">Пятница = Исчезновение</div>
+                <p class="reason-text">
+                    Регулярные пропажи по пятницам в кальянных или на «важных встречах» 
+                    с друзьями, о которых нельзя рассказывать. Это не про отдых, это про 
+                    отсутствие ответственности перед отношениями.
+</p>
+            </div>
+
+            <!-- Причина 5 -->
+            <div class="reason-card">
+                <span class="icon-warning">🤫</span>
+                <div class="reason-title">Молчаливое обесценивание</div>
+                <p class="reason-text">
+                    Он не кричит и не ругается, он просто игнорирует твои достижения. 
+                    «Ну и что, что сдала сессию, зато у меня проблемы на работе». 
+                    Это медленное убийство твоей самооценки.
+                </p>
+            </div>
+
+            <!-- Причина 6 -->
+            <div class="reason-card">
+                <span class="icon-warning">🎭</span>
+                <div class="reason-title">Маска «Хорошего парня»</div>
+                <p class="reason-text">
+                    В обществе он идеальный: вежливый, спокойный, шутит. Но стоит 
+                    закрыть дверь квартиры, как маска падает. Двойные стандарты — 
+                    главный признак того, что внутри живёт «не гау».
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Итоговый блок -->
+        <div class="conclusion-box">
+            <h3>После такого общения парни становятся мнимыми.</h3>
+            <p>Они теряют связь с реальностью, заменяя её на набор стереотипов и оправданий. 
+               Этот сайт создан, чтобы ты могла вовремя заметить эти звоночки и защитить своё спокойствие.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        Разработчики: Потерпевшие девушки 
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+

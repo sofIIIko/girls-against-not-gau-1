@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Девушки против не гау</title>
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #1a1a1d;       /* Почти черный фон */
+            --bg-gray: #2d2d30;       /* Темно-серый для блоков */
+            --text-main: #f0f0f0;     /* Светлый текст */
+            --accent: #ff9f1c;         /* Оранжевый акцент */
+            --menu-bg: #0f0f11;       /* Цвет меню */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* --- ГЛАВНОЕ МЕНЮ (ЧЕРНО-СЕРОЕ) --- */
+        header {
+            background-color: var(--menu-bg);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            transition: color 0.3s, text-shadow 0.3s;
+            text-shadow: 0 0 5px rgba(0,0,0,0);
+        }
+
+        nav a:hover {
+            color: var(--accent);
+            text-shadow: 0 0 10px var(--accent);
+        }
+
+        /* --- ОСНОВНОЙ КОНТЕНТ --- */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero-section {
+            text-align: center;
+            background: var(--bg-gray);
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 50px;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .intro-text {
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* --- ГАЛЕРЕЯ ФОТО --- */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 3px solid var(--accent);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        /* --- НИЖНЕЕ МЕНЮ (КЛАССНОЕ) --- */
+        .bottom-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 50px;
+        }
+
+        .btn-link {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-link:hover {
+            background: var(--accent);
+            color: black;
+            border-color: var(-
+
+
+accent);
+            box-shadow: 0 0 20px var(--accent);
+        }
+
+        /* --- ПОДВАЛ --- */
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Меню -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Девушки против не гау</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="color:var(--accent)">Главная</a></li>
+                    <li><a href="reasons.html">Причины</a></li>
+                    <li><a href="actions.html">Поступки не гау</a></li>
+                    <li><a href="looks.html">Их внешность</a></li>
+                    <li><a href="quiz.html">Тест: подходит ли парень?</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок и вступление -->
+        <section class="hero-section">
+            <h2 class="hero-title">Девушки против не гау</h2>
+            <p class="intro-text">
+                Здесь мы разбираем, почему девушки против того, чтоб их парни общались с представителями «не гау». 
+                Мы анализируем поведение, стиль и мотивы, чтобы помочь тебе разобраться в ситуации.
+            </p>
+        </section>
+
+        <!-- Фотографии (Роналду, Солярис, пустые слоты) -->
+        <div class="gallery-grid">
+            <!-- Замени src на img/ronaldo.jpg когда скачаешь фото -->
+            <div class="gallery-item">
+                <img src="img/ronaldo.jpg" alt="Роналду">
+                <p class="caption">Криштиану Роналду</p>
+            </div>
+            
+            <!-- Замени src на img/solaris.jpg -->
+            <div class="gallery-item">
+                <img src="img/solaris.jpg" alt="Солярис">
+                <p class="caption">Синий Hyundai Solaris</p>
+            </div>
+
+            <!-- Пустой слот для фото 1 -->
+            <div class="gallery-item">
+                <img src="img/natura.jpg" alt="натура">
+                <p class="caption">настоящее лицо</p>
+            </div>
+
+            <!-- Пустой слот для фото 2 -->
+            <div class="gallery-item">
+                <img src="img/obsession.jpg" alt="одержимость">
+                <p class="caption">одержимость</p>
+            </div>
+        </div>
+
+        <!-- Классное меню-кнопки -->
+        <div class="bottom-nav">
+            <a href="reasons.html" class="btn-link">Причины</a>
+            <a href="actions.html" class="btn-link">Поступки не гау</a>
+            <a href="looks.html" class="btn-link">Внешность</a>
+            <a href="quiz.html" class="btn-link">Интерактив</a>
+            <a href="contacts.html" class="btn-link">Контакты</a>
+        </div>
+    </main>
+
+    <!-- Разработчики -->
+    <footer>
+        Разработчики: Потерпевшие девушки
+    </footer>
+
+</body>
+</html>-

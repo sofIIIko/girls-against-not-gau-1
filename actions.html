@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поступки | Девушки против не гау</title>
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #121214;       /* Тёмно-серый, как бетон */
+            --card-bg: #1e1e21;       /* Чуть светлее для карточек */
+            --text-main: #e0e0e0;     /* Светло-серый текст */
+            --accent-red: #ff4757;   /* Ярко-красный для акцентов и морали */
+            --menu-bg: #0f0f11;
+            --border-red: 3px solid var(--accent-red);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        /* --- МЕНЮ --- */
+        header {
+            background-color: var(--menu-bg);
+            padding: 15px 0;
+            border-bottom: 1px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 { margin: 0; color: white; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; }
+        
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+        nav a:hover, nav a.active { 
+            color: var(--accent-red); 
+            text-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+        }
+
+        main {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* --- ЗАГОЛОВОК --- */
+        h2 {
+            font-size: 2.8rem;
+            color: white;
+            text-align: center;
+            margin-bottom: 60px;
+            line-height: 1.1;
+            /* Эффект печатной машинки для заголовка */
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white }
+        }
+
+        /* --- СЕТКА ПОСТУПКОВ --- */
+        .actions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        /* --- КАРТОЧКА ДЕЛА --- */
+        .action-card {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .action-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(255, 71, 87, 0.2);
+            border-color: #555;
+        }
+
+        /* Красная полоса слева при наведении */
+        .action-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0; width: 5px;
+            background: transparent;
+            transition: background 0.3s;
+        }
+
+        .action-card:hover::before {
+            background: var(--accent-red);
+        }
+
+        .person-name {
+            font-size: 1.1rem;
+            color: #ccc;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+        }
+
+        .offense-text {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom:
+
+
+<div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Отношения становятся реквизитом для поднятия самооценки в мужской компании. Девушка здесь — не партнёр, а статусная вещь. Такой подход строится на унижении и демонстрации власти, а не на уважении.</p>
+                </div>
+            </div>
+
+            <!-- 5. Исмоил Исмоилов -->
+            <div class="action-card" style="border-color: #2ecc71; box-shadow: 0 0 20px rgba(46, 204, 113, 0.1);">
+                <span class="person-name" style="color: #2ecc71;">Исмоил Исмоилов</span>
+                <p class="offense-text" style="color: #2ecc71;">Пока не был нигде замечен. На него все ещё есть надежда.</p>
+                
+                <div class="moral-box" style="border-top-color: #333;">
+                    <span class="moral-title" style="color: #2ecc71;">Мораль?</span>
+                    <p class="moral-text" style="color: #2ecc71;">Иногда отсутствие плохих поступков — это уже хороший поступок. Не все обязаны быть токсичными. Есть парни, которые просто нормально общаются и не пытаются самоутвердиться за чужой счёт.</p>
+                </div>
+            </div>
+
+            <!-- 6. Павел Корчагин -->
+            <div class="action-card">
+                <span class="person-name">Павел Корчагин</span>
+                <p class="offense-text">Большую часть времени проводит со своими «братками, кентами», а не с девушкой.</p>
+                <span class="brotherhood-note">Приоритет «пацанской стаи» над отношениями.</span>
+                
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Если девушка всегда на втором месте после друзей, это сигнал о незрелости. Взрослые отношения требуют баланса. Ставить «братство» выше чувств конкретного человека — значит обесценивать эти отношения.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        Разработчики: Потерпевшие девушки
+    </footer>
+
+</body>
+</html> 20px
+
+
+;
+            line-height: 1.4;
+        }
+
+        .moral-box {
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px dashed #444;
+        }
+
+        .moral-title {
+            color: var(--accent-red);
+            font-weight: 800;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .moral-text {
+            color: #ff6b6b;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        /* Специальный стиль для Павла (чтобы выделить его "братство") */
+        .brotherhood-note {
+            color: #ffa502;
+            font-style: italic;
+            font-size: 0.85rem;
+            margin-top: 5px;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            color: #444;
+            font-size: 0.8rem;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div><h1>Девушки против не гау</h1></div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="reasons.html">Причины</a>
+                <a href="actions.html" class="active">Поступки</a>
+                <a href="looks.html">Внешность</a>
+                <a href="quiz.html">Тест</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Заголовок -->
+        <h2>Одни из поступков «не гау», из-за которых появились потерпевшие</h2>
+
+        <div class="actions-grid">
+            
+            <!-- 1. Андрей Бабушкин -->
+            <div class="action-card">
+                <span class="person-name">Андрей Бабушкин</span>
+                <p class="offense-text">Попросил контакты девушки, которую подвёз, и так ей не написал.</p>
+                
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Это игра в «охотника». Ему важен сам факт получения номера, как трофей. Отсутствие обратной связи — это намеренное обесценивание чувств девушки. Это не забывчивость, это манипуляция вниманием.</p>
+                </div>
+            </div>
+
+            <!-- 2. Арсений Нехожин -->
+            <div class="action-card">
+                <span class="person-name">Арсений Нехожин</span>
+                <p class="offense-text">Сделал фанфик про своего друга и свою одногруппницу, когда у того уже была девушка. Ей это очень не понравилось.</p>
+                
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Смешивание реальности и фансервиса. Он не видит границ: то, что кажется ему «просто шуткой», для реальных людей — вторжение в личную жизнь и удар по самооценке. Юмор не должен строиться на чужом дискомфорте.</p>
+                </div>
+            </div>
+
+            <!-- 3. Кирилл Арбузов -->
+            <div class="action-card">
+                <span class="person-name">Кирилл Арбузов</span>
+                <p class="offense-text">Вместо слов поддержки о расставании пишет: «Теперь ты можешь ебать телок».</p>
+                
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Полная девальвация эмоций. В момент уязвимости человек ждёт эмпатии, а получает токсичную маску «брутальности». Это не мужская поддержка, это попытка скрыть свою неспособность справляться с чужими слезами.</p>
+                </div>
+            </div>
+
+	    <!-- 4. Дмитрий Гусев -->
+            <div class="action-card">
+                <span class="person-name">Дмитрий Гусев</span>
+                <p class="offense-text">Преподносит свои отношения как патриархат, чтобы выпендриваться перед пацанами.</p>
+
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Отношения становятся реквизитом для поднятия самооценки в мужской компании. Девушка здесь — не партнёр, а статусная вещь. Такой подход строится на унижении и демонстрации власти, а не на уважении.</p>
+                </div>
+            </div>
+
+
+            <!-- 5. Исмоил Исмоилов -->
+            <div class="action-card" style="border-color: #2ecc71; box-shadow: 0 0 20px rgba(46, 204, 113, 0.1);">
+                <span class="person-name" style="color: #2ecc71;">Исмоил Исмоилов</span>
+                <p class="offense-text" style="color: #2ecc71;">Пока не был нигде замечен. На него все ещё есть надежда.</p>
+                
+                <div class="moral-box" style="border-top-color: #333;">
+                    <span class="moral-title" style="color: #2ecc71;">Мораль?</span>
+                    <p class="moral-text" style="color: #2ecc71;">Иногда отсутствие плохих поступков — это уже хороший поступок. Не все обязаны быть токсичными. Есть парни, которые просто нормально общаются и не пытаются самоутвердиться за чужой счёт.</p>
+
+                </div>
+            </div>
+
+            <!-- 6. Павел Корчагин -->
+            <div class="action-card">
+                <span class="person-name">Павел Корчагин</span>
+                <p class="offense-text">Большую часть времени проводит со своими «братками, кентами», а не с девушкой.</p>
+                <span class="brotherhood-note">Приоритет «пацанской стаи» над отношениями.</span>
+                
+                <div class="moral-box">
+                    <span class="moral-title">В чём проблема?</span>
+                    <p class="moral-text">Если девушка всегда на втором месте после друзей, это сигнал о незрелости. Взрослые отношения требуют баланса. Ставить «братство» выше чувств конкретного человека — значит обесценивать эти отношения.</p>
+                </div>
+            </div>
+ 
+        </div>
+
+    </main>
+
+    <footer>
+        Разработчики: Потерпевшие девушки
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+

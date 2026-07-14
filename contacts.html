@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты | Девушки против не гау</title>
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #1a1a1d;       /* Почти черный фон */
+            --bg-gray: #2d2d30;       /* Темно-серый для блоков */
+            --text-main: #f0f0f0;     /* Светлый текст */
+            --accent: #ff9f1c;         /* Оранжевый акцент */
+            --menu-bg: #0f0f11;       /* Цвет меню */
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        /* --- ГЛАВНОЕ МЕНЮ --- */
+        header {
+            background-color: var(--menu-bg);
+            padding: 15px 0;
+            border-bottom: 2px solid var(--accent);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 { margin: 0; color: white; font-size: 1.2rem; }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover, nav a.active { color: var(--accent); text-shadow: 0 0 10px var(--accent); }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* Сетка карточек */
+        .contacts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Карточка контакта */
+        .contact-card {
+            background: var(--bg-gray);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            border: 1px solid #444;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px); /* Эффект всплытия */
+            box-shadow: 0 15px 30px rgba(255, 159, 28, 0.2);
+            border-color: var(--accent);
+        }
+
+        .contact-name {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        .contact-nickname {
+            color: var(--accent);
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .tg-link {
+            display: inline-block;
+            background: #2aa6eb; /* Цвет Telegram */
+            color: white;
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.1s;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .tg-link:hover {
+            background: #1e88e5;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 50px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div><h1>Девушки против не гау</h1></div>
+            <nav>
+                <a href="index.html">Главная</a>
+                <a href="reasons.html">Причины</a>
+                <a href="actions.html">Поступки</a>
+
+
+<a href="looks.html">Внешность</a>
+                <a href="quiz.html">Тест</a>
+                <a href="contacts.html" class="active">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Контакты участников</h2>
+        
+        <div class="contacts-grid">
+            
+            <!-- Контакт 1 -->
+            <div class="contact-card">
+                <div class="contact-name">Кирилл Арбузов</div>
+                <span class="contact-nickname">«Арбуз»</span>
+                <a href="https://t.me/DoRADyRAbb" target="_blank" class="tg-link">@DoRADyRAbb</a>
+            </div>
+
+            <!-- Контакт 2 -->
+            <div class="contact-card">
+                <div class="contact-name">Андрей Бабушкин</div>
+                <span class="contact-nickname"></span> <!-- У Андрея нет прозвища в списке -->
+                <a href="https://t.me/youngrelax" target="_blank" class="tg-link">@youngrelax</a>
+            </div>
+
+            <!-- Контакт 3 -->
+            <div class="contact-card">
+                <div class="contact-name">Дмитрий Гусев</div>
+                <span class="contact-nickname">«Апельсин»</span>
+                <a href="https://t.me/Klownq" target="_blank" class="tg-link">@Klownq</a>
+            </div>
+
+            <!-- Контакт 4 -->
+            <div class="contact-card">
+                <div class="contact-name">Павел Корчагин</div>
+                <span class="contact-nickname">«Старо-Загорский»</span>
+                <a href="https://t.me/desalmado" target="_blank" class="tg-link">@desalmado</a>
+            </div>
+
+            <!-- Контакт 5 -->
+            <div class="contact-card">
+                <div class="contact-name">Исмоил Исмоилов</div>
+                <span class="contact-nickname"></span>
+                <a href="https://t.me/Ismoilovirr" target="_blank" class="tg-link">@Ismoilovirr</a>
+            </div>
+
+            <!-- Контакт 6 -->
+            <div class="contact-card">
+                <div class="contact-name">Арсений Нехожин</div>
+                <span class="contact-nickname"></span>
+                <a href="https://t.me/neuhozhen" target="_blank" class="tg-link">@neuhozhen</a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        Разработчики: Потерпевшие девушки
+    </footer>
+
+</body>
+</html>
+
+
+
+
